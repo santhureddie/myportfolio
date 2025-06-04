@@ -4,16 +4,16 @@ import { createRoot } from 'react-dom/client';
 
 const resumeData = {
   name: "Santhosh Kumar Reddy Jampana",
-  shortName: "Santhosh J.",
+  shortName: "Santhosh J",
   title: "Software Engineer",
   heroHeadline: "Software Engineer & AI Enthusiast", 
   contact: {
     email: "santhoshkumarreddyjampana@gmail.com",
     phone: "(913) 263-8981",
     linkedin: "https://linkedin.com/in/santhoshjampana",
-    github: "https://github.com/santhoshjampana", 
+    github: "https://github.com/santhureddie", 
     location: "Memphis, TN, 38119",
-    resumeLink: "mailto:santhoshkumarreddyjampana@gmail.com?subject=Resume%20Request" 
+    resumeLink: "https://drive.google.com/file/d/1fXux9_e1O1OExt7AYHNOV0iZ-g4Y9ZW_/view?usp=sharing" 
   },
   professionalSummary: "A passionate Software Engineer with over 2 years of experience specializing in scalable backend services, real-time systems, and cloud-native applications. I thrive on optimizing system reliability and performance, reducing latency, and delivering features that impact thousands. My expertise lies in translating complex technical challenges into elegant and efficient solutions using Python, Java, and AWS technologies.",
   technicalSkills: [
@@ -27,6 +27,16 @@ const resumeData = {
     { category: "Methodologies", skills: ["SDLC", "OOP", "Unit Testing", "Agile/Scrum", "Code Reviews"] }
   ],
   professionalExperience: [
+    {
+      company: "Voicy Labs",
+      title: "Software Engineer",
+      dates: "Feb 2025 – Present",
+      responsibilities: [
+        "Engineered an LLM-integrated voice assistant for live call transcription and response, simulating SaaS automation.",
+        "Achieved a 40% reduction in end-to-end latency through optimized async streaming and WebSocket handling.",
+        "Ensured scalability and performance using Dockerized microservices on AWS with CloudWatch monitoring."
+      ]
+    },
     {
       company: "Tata Consultancy Services",
       title: "Software Engineer",
@@ -51,6 +61,38 @@ const resumeData = {
   ],
   projects: [
     {
+      name: "Skills Highlighter",
+      techStack: ["Typescript", "CSS", "Regex", "HTML"],
+      descriptionPoints: [
+        "Developed a browser extension that highlights skills in job descriptions using regex patterns.",
+        "Reduced personal application review time by 40%, improving personal productivity using browser automation",
+        "Ensured cross-browser compatibility and performance optimization."
+      ],
+      links: { github: "https://github.com/santhureddie/Skill-Highlighter", live: "#" } 
+    },
+    {
+      name: "Mindful Note Keeper",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+      descriptionPoints: [
+        "Developed a fully responsive, real-time note-taking application with user authentication using Supabase and a Vite-React-Tailwind stack.",
+        "Integrated secure login and dynamic note syncing features to provide seamless cross-session user experience.",
+        "Designed a clean, distraction-free UI with dark mode support to enhance user focus and accessibility.",
+        "Automated deployment with GitHub Actions and hosted the app on GitHub Pages, ensuring fast and reliable access."
+      ],
+      links: { github: "https://github.com/santhureddie/mindful-note-keeper", live: "https://santhureddie.github.io/mindful-note-keeper/" } 
+    },
+     {
+      name: "Portfolio Website",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+      descriptionPoints: [
+        "Built a responsive and performant portfolio site using React, TypeScript, Vite, Tailwind CSS, and shadcn/ui to highlight key projects and skills.",
+        "Implemented clean UI/UX design principles and mobile-first responsiveness to optimize user experience across all devices.",
+        "Showcases detailed project summaries, technology stacks, and live demos to demonstrate technical breadth and frontend capabilities.",
+        "Deployed with GitHub Pages and integrated GitHub Actions for continuous deployment and maintenance."
+      ],
+      links: { github: "https://github.com/santhureddie/myportfolio", live: "https://santhureddie.github.io/myportfolio/" } 
+    },
+    {
       name: "AI Voice Agent – Real-Time Conversational System",
       techStack: ["Python", "FastAPI", "LiveKit", "WebRTC", "STT/TTS", "AWS", "Docker"],
       descriptionPoints: [
@@ -69,7 +111,7 @@ const resumeData = {
         "Maintained high code quality with comprehensive test coverage and robust backend observability."
       ],
       links: { 
-        github: "#", // Assuming this is still a placeholder
+        github: "https://github.com/santhureddie/munchie-quick-order", // Assuming this is still a placeholder
         live: "https://santhureddie.github.io/munchie-quick-order/" // UPDATED
       }
     },
@@ -453,7 +495,7 @@ const App: React.FC = () => {
       <footer className="footer">
         <div className="container">
           <div className="social-links">
-             {resumeData.contact.github && <a href={resumeData.contact.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+             {resumeData.contact.github && <a href={`https://github.com/santhureddie/`} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" height="24" width="24"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
              </a>}
              {resumeData.contact.linkedin && <a href={resumeData.contact.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -461,8 +503,8 @@ const App: React.FC = () => {
              </a>}
           </div>
           <p>
-            Designed & Built by {resumeData.name}<br/>
-            <a href="https://github.com/bchiang7/v4" target="_blank" rel="noopener noreferrer">Inspired by Brittany Chiang's Portfolio</a>
+            Made with ❤️ by {resumeData.name}<br/>
+            
           </p>
           <p>&copy; {new Date().getFullYear()} {resumeData.name}. All rights reserved.</p>
         </div>
