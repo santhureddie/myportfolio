@@ -17,39 +17,24 @@ const resumeData = {
   },
   professionalSummary: "A passionate Software Engineer with over 2 years of experience specializing in scalable backend services, real-time systems, and cloud-native applications. I thrive on optimizing system reliability and performance, reducing latency, and delivering features that impact thousands. My expertise lies in translating complex technical challenges into elegant and efficient solutions using Python, Java, and AWS technologies.",
   technicalSkills: [
-    { category: "Languages", skills: ["JavaScript", "TypeScript", "Python", "Node.js", "SQL", "Shell", "Java", "C++", "C", "Erlang", "Rust"] },
-    { category: "Frameworks & Libraries", skills: ["Express.js", "FastAPI", "Django", "React", "Next.js", "Bootstrap", "GraphQL", "Flask"] },
-    { category: "Web Technologies", skills: ["HTML5", "CSS", "Responsive Design", "WebRTC", "VAD"] },
+    { category: "Languages", skills: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "Shell"] },
+    { category: "Frameworks & Libraries", skills: ["FastAPI", "Django", "Node.js", "React", "Bootstrap", "GraphQL"] },
+    { category: "Web Technologies", skills: ["HTML5", "CSS", "Responsive Design", "WebRTC"] },
     { category: "Databases", skills: ["PostgreSQL", "MongoDB", "SQLite", "SQL/NoSQL"] },
-    { category: "Cloud Platforms", skills: ["OCI (Functions, Vault, Events, IAM, IoT, API Gateway, Object Storage, Notifications)", "AWS (EC2, Lambda, S3, CloudWatch)"] },
-    { category: "DevOps & Infrastructure", skills: ["Linux", "Linux internals", "Containerization", "Docker", "Podman", "Kubernetes", "Jenkins", "Git", "GitHub", "CI/CD", "Kernel modules"] },
-    { category: "AI & Automation", skills: ["Prompt Engineering", "LLM integrations", "Coding agents (Codex)", "STT", "TTS", "ElevenLabs"] },
-    { category: "Monitoring & Tools", skills: ["CloudWatch", "Wireshark", "Logging Systems", "VS Code", "Jira"] },
-    { category: "Methodologies", skills: ["Async workflows", "Event-driven architecture", "Retry logic", "Fault tolerance", "Distributed systems", "Agile/Scrum", "Code Reviews"] }
+    { category: "Cloud Platforms", skills: ["AWS (EC2, Lambda, S3, CloudWatch)"] },
+    { category: "DevOps", skills: ["Docker", "Kubernetes", "Jenkins", "Git", "GitHub", "CI/CD"] },
+    { category: "Monitoring & Tools", skills: ["CloudWatch", "Wireshark", "Prometheus (basic)", "Logging Systems"] },
+    { category: "Methodologies", skills: ["SDLC", "OOP", "Unit Testing", "Agile/Scrum", "Code Reviews"] }
   ],
   professionalExperience: [
     {
-      company: "Oracle",
-      title: "Member of Technical Staff",
-      dates: "Jul 2025 – Present",
-      responsibilities: [
-        "Designed and automated an end-to-end IoT credential provisioning and lifecycle pipeline using OCI Functions, Vault, Object Storage, and Python, reducing device onboarding time by over 90%.",
-        "Architected an event-driven cloud system with OCI Notifications, Node-RED, and serverless functions to process real-time telemetry and alerts with automated secret rotation.",
-        "Developed secure Node.js services for secret retrieval and decryption from OCI Vault with IAM-based access controls and asymmetric cryptography, reducing configuration-related errors by 70%.",
-        "Built containerized serverless workloads with Podman and Linux-based build pipelines, deploying into VCN-attached OCI subnets for secure production execution.",
-        "Improved reliability of IoT Digital Twin and MQTT communication flows by validating routing, troubleshooting secure connectivity paths, and hardening Linux runtime environments."
-      ]
-    },
-    {
       company: "Voicy Labs",
       title: "Software Engineer",
-      dates: "Feb 2025 – Jul 2025",
+      dates: "Feb 2025 – Present",
       responsibilities: [
-        "Developed backend services in Node.js and Express.js for a real-time voice assistant handling call answer, STT transcription, LLM response generation, and TTS playback.",
-        "Orchestrated fault-tolerant async workflows with retry logic, fallback mechanisms, and state tracking across multi-turn conversations.",
-        "Managed modular microservices with structured logging and observability, improving response latency by 40%.",
-        "Implemented PostgreSQL data ingestion and persistence pipelines for call sessions, interaction logs, and model outputs.",
-        "Applied prompt engineering patterns to improve speed, relevance, and conversational coherence while reducing run-time costs."
+        "Engineered an LLM-integrated voice assistant for live call transcription and response, simulating SaaS automation.",
+        "Achieved a 40% reduction in end-to-end latency through optimized async streaming and WebSocket handling.",
+        "Ensured scalability and performance using Dockerized microservices on AWS with CloudWatch monitoring."
       ]
     },
     {
