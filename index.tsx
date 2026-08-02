@@ -6,7 +6,7 @@ const resumeData = {
   name: "Santhosh Kumar Reddy Jampana",
   shortName: "Santhosh J",
   title: "Software Engineer",
-  heroHeadline: "Software Engineer & AI Enthusiast", 
+  heroHeadline: "Embedded Linux & Systems Software Engineer", 
   contact: {
     email: "santhoshkumarreddyjampana@gmail.com",
     phone: "(913) 263-8981",
@@ -15,7 +15,7 @@ const resumeData = {
     location: "Memphis, TN, 38119",
     resumeLink: "https://drive.google.com/file/d/1fXux9_e1O1OExt7AYHNOV0iZ-g4Y9ZW_/view?usp=sharing" 
   },
-  professionalSummary: "A passionate Software Engineer with over 2 years of experience specializing in scalable backend services, real-time systems, and cloud-native applications. I thrive on optimizing system reliability and performance, reducing latency, and delivering features that impact thousands. My expertise lies in translating complex technical challenges into elegant and efficient solutions using Python, Java, and AWS technologies.",
+  professionalSummary: "Building reliable Linux platforms for ARM64 edge devices, OTA update infrastructure, secure boot workflows, and cloud-connected embedded systems.",
   technicalSkills: [
     { category: "Languages", skills: ["JavaScript", "TypeScript", "Python", "Node.js", "SQL", "Shell", "Java", "C++", "C", "Erlang", "Rust"] },
     { category: "Frameworks & Libraries", skills: ["Express.js", "FastAPI", "Django", "React", "Next.js", "Bootstrap", "GraphQL", "Flask"] },
